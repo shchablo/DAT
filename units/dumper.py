@@ -12,10 +12,10 @@ from datetime import timedelta
 
 def dump(path2data, numTweets = 35, behindDays = 1):
 
-    CONSUMER_KEY =
-    CONSUMER_SECRET =
-    OAUTH_TOKEN =
-    OAUTH_TOKEN_SECRET =
+    CONSUMER_KEY = "paBGsJ2MHl7X9QbesMpGTJygw"
+    CONSUMER_SECRET = "BNwd8VE10kQOiCpPTXtGqkYiV1VdLiNyeGL6BmfkmvdixGUbAy"
+    OAUTH_TOKEN = "1451462722063900673-3y3lZqXo9VgBgQ981G5SHvTDZEJ8LG"
+    OAUTH_TOKEN_SECRET = "qTz3xARmnDdfiuW3Hacy81t9wdhLImsvfzA8A6PkRKG97"
 
     NUMBER_of_TWEETS = numTweets
     SEARCH_BEHIND_DAYS= behindDays

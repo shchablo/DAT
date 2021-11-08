@@ -2,6 +2,7 @@
 csv/
 tests/
 config.py
+units/dumper.py
 
 
 # Byte-compiled / optimized / DLL files
