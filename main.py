@@ -20,7 +20,12 @@ from tokenizer import clouder
 
 # ==============================================================================
 
-
+from physt import histogram, binnings, h1, h2, h3
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.axes_grid1 import host_subplot
+import mpl_toolkits.axisartist as AA
+import matplotlib.pyplot as plt
 def unitDumper(path2data, numTweets, behindDays):
     dump(path2data, numTweets, behindDays)
     return True
@@ -43,7 +48,22 @@ def unitTokenizer(path2data, path2save):
     #    plotСloud(' '.join(clouds[key]), path2save, name=key)
 
     #deeper
-    deeps = deeper(texts, 50)
+    #deeps = deeper(texts, 50)
+
+    fig, ax = plt.subplots( nrows=1, ncols=1 )  # create figure & 1 axis
+    x = np.random.normal(10, 10, 1000)
+    y = np.random.normal(10, 10, 1000)
+    histogram = h2(x, y, "fixed_width", bin_width=[10, 10], name="Fixed-width bins", axis_names=["x", "y"])
+    for i in range(100):
+        histogram.fill([40, 40])
+    histogram.plot(ax=ax)
+    fig.canvas.draw()
+    labels = [item.get_text() for item in ax.get_xticklabels()]
+    labels[1] = 'Test'
+    ax.set_xticklabels(labels)
+    fig.show()
+    fig.savefig(path2save+'to.png')
+    #figure.tight_layout()
 
     return True
 

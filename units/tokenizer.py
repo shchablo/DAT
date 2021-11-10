@@ -92,7 +92,6 @@ def deeper(texts, numMostCommonTokens=50):
     OUTPUTs
         dictionary: result[key_token][hist]
 
-        ! Нужно обработать, если в твите больше двух раз встречается слово
     """
 
     tokens = list(itertools.chain.from_iterable(texts))
