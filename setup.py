@@ -6,7 +6,7 @@ with open("README", 'r') as f:
 setup(
    name='DAT',
    version='0.0',
-   description='Deep Analysis of Text / Deep Anal in Text',
+   description='Deep Analysis of Text',
    license="GNU",
    long_description=long_description,
    author='Shchablo',
