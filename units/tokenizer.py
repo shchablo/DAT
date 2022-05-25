@@ -8,7 +8,7 @@ nltk.download('stopwords')
 
 path2data = "./csv/data.csv";
 
-def get_cleaned_corpus(data, text_column='Tweet Text'):
+def get_cleaned_corpus(df, text_column='Tweet Text'):
     """
     Функция принимает на вход датафрейм в исходном виде и возвращает очищенный корпус(список текстов).
     В данный момент из текста удаляется все, кроме слов и чисел, для демонстрации работы.
